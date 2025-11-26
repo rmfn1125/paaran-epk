@@ -25,9 +25,32 @@ const pretendard = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Paaran EPK",
-  description: "EPK for band 파아란",
+  title: "Paaran — EPK",
+  description: "Official EPK for the Korean indie band PAARAN.",
+  openGraph: {
+    title: "Paaran — EPK",
+    description: "Official EPK for the Korean indie band PAARAN.",
+    url: "https://paaran-epk.vercel.app",
+    siteName: "Paaran EPK",
+    images: [
+      {
+        url: "/epk-preview.jpg", // 너가 넣을 이미지 이름!
+        width: 1200,
+        height: 630,
+        alt: "Paaran EPK Preview",
+      },
+    ],
+    locale: "ko_KR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Paaran — EPK",
+    description: "Official EPK for the Korean indie band PAARAN.",
+    images: ["/epk-preview.jpg"],
+  },
 };
+
 
 export default function RootLayout({
   children,
