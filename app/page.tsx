@@ -18,181 +18,194 @@ const STREAMING_YT =
 export default function Home() {
   return (
     <div className="min-h-screen w-full bg-gradient-to-b from-sky-50 to-white text-slate-900">
-
       {/* --- FIXED RIGHT ICON BAR --- */}
-     <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6">
-  <a
-    href={INSTAGRAM_URL}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="opacity-80 hover:opacity-100 transition"
-  >
-    <img src="/icons/instagram.png" alt="Instagram" className="w-8 h-8" />
-  </a>
-
-  <a
-    href="https://youtube.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="opacity-80 hover:opacity-100 transition"
-  >
-    <img src="/icons/youtube.png" alt="YouTube" className="w-8 h-8" />
-  </a>
-
-  <a
-    href="https://open.spotify.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="opacity-80 hover:opacity-100 transition"
-  >
-    <img src="/icons/spotify.png" alt="Spotify" className="w-8 h-8" />
-  </a>
-
-  <a
-    href="https://music.apple.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="opacity-80 hover:opacity-100 transition"
-  >
-    <img src="/icons/applemusic.png" alt="Apple Music" className="w-8 h-8" />
-  </a>
-
-  <a
-    href="https://www.melon.com"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="opacity-80 hover:opacity-100 transition"
-  >
-    <img src="/icons/melon.png" alt="Melon" className="w-8 h-8" />
-  </a>
-
-  <a
-    href="https://www.genie.co.kr"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="opacity-80 hover:opacity-100 transition"
-  >
-    <img src="/icons/genie.png" alt="Genie" className="w-8 h-8" />
-  </a>
-</div>
-
-     {/* ================= HERO: FULLSCREEN PHOTO + LEFT TEXT OVERLAY ================= */}
-<section className="relative w-full min-h-screen text-slate-50 overflow-hidden">
-
-  {/* 배경 사진 + 어두운 그라데이션 오버레이 */}
-  <div className="absolute inset-0">
-    <img
-      src="/artist-full.jpg"
-      alt="파아란 프로필"
-      className="w-full h-full object-cover"
-    />
-    <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-black/30" />
-  </div>
-
-  {/* 상단 네비게이션 바 */}
-  <header className="relative z-20 flex items-center justify-between px-6 md:px-12 py-6 text-xs md:text-sm">
-    <div className="flex items-center">
-      <img
-        src="/logosymbol.png"
-        alt="Paaran Symbol Logo"
-        className="w-16 h-16 md:w-20 md:h-20 object-contain"
-      />
-    </div>
-    <nav className="hidden md:flex items-center gap-8 text-slate-200">
-      <a href="#bio" className="hover:text-white transition">bio</a>
-      <a href="#music" className="hover:text-white transition">music</a>
-      <a href="#photos" className="hover:text-white transition">photos</a>
-      <a href="#contact" className="hover:text-white transition">contact</a>
-    </nav>
-  </header>
-
-  {/* 중앙 컨텐츠: 왼쪽에 로고 + 텍스트 */}
- <div className="relative z-20 w-full flex items-center min-h-[calc(100vh-80px)] px-5 md:px-8 lg:px-12">
-  <div className="w-full max-w-md space-y-6 translate-y-[30px] md:translate-y-[32px]">
-
-
-
-
-      {/* 한글 로고 */}
-      <div className="w-52 md:w-64">
-        <img
-          src="/logo-kor.png"
-          alt="파아란 로고"
-          className="w-full h-auto object-contain drop-shadow-[0_6px_18px_rgba(0,0,0,0.6)]"
-        />
-      </div>
-
-      {/* 밴드 / 싱글 정보 */}
-      <div className="space-y-1 text-xs md:text-sm text-slate-200">
-        <p className="font-semibold tracking-[0.2em] uppercase">
-          밴드 파아란
-        </p>
-        <p>Rock / Indie · Debut Single</p>
-        <p>비구름 / Raincloud · 2025.11.22</p>
-      </div>
-
-      {/* 소개글 */}
-      <p className="text-xs md:text-sm leading-relaxed text-slate-100 max-w-md">
-        모던 록을 기반으로 다양한 장르와 사운드를 지향하는 3인조 밴드 파아란의
-        첫 싱글 <span className="font-medium">‘비구름’</span>은 말하지 못한 감정을
-        빗소리에 비유해 표현한 곡으로, 잊힌 단어들로 전하는 조용한 고백과
-        기다림의 시간을 담았습니다.
-      </p>
-
-      {/* 인스타 핸들 */}
-      <div className="text-xs md:text-sm text-slate-200">
-        @band_paaran
-      </div>
-
-      {/* 버튼 */}
-      <div>
+      <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6">
         <a
-          href={STREAMING_URL}
-          className="inline-flex items-center justify-center px-6 md:px-7 py-2.5 rounded-full bg-white/90 text-slate-900 text-xs md:text-sm tracking-[0.18em] uppercase hover:bg-white transition shadow-lg shadow-black/40"
+          href={INSTAGRAM_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-80 hover:opacity-100 transition"
         >
-          LISTEN TO “비구름 / RAINCLOUD”
+          <img src="/icons/instagram.png" alt="Instagram" className="w-8 h-8" />
+        </a>
+
+        <a
+          href="https://youtube.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-80 hover:opacity-100 transition"
+        >
+          <img src="/icons/youtube.png" alt="YouTube" className="w-8 h-8" />
+        </a>
+
+        <a
+          href="https://open.spotify.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-80 hover:opacity-100 transition"
+        >
+          <img src="/icons/spotify.png" alt="Spotify" className="w-8 h-8" />
+        </a>
+
+        <a
+          href="https://music.apple.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-80 hover:opacity-100 transition"
+        >
+          <img src="/icons/applemusic.png" alt="Apple Music" className="w-8 h-8" />
+        </a>
+
+        <a
+          href="https://www.melon.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-80 hover:opacity-100 transition"
+        >
+          <img src="/icons/melon.png" alt="Melon" className="w-8 h-8" />
+        </a>
+
+        <a
+          href="https://www.genie.co.kr"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="opacity-80 hover:opacity-100 transition"
+        >
+          <img src="/icons/genie.png" alt="Genie" className="w-8 h-8" />
         </a>
       </div>
 
+      {/* ================= HERO: FULLSCREEN PHOTO + LEFT TEXT OVERLAY ================= */}
+      <section className="relative w-full min-h-screen text-slate-50 overflow-hidden">
+        {/* 배경 사진 + 어두운 그라데이션 오버레이 */}
+        <div className="absolute inset-0">
+          <img
+            src="/artist-full.jpg"
+            alt="파아란 프로필"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/95 via-black/70 to-black/30" />
+        </div>
+
+        {/* 상단 네비게이션 바 */}
+        <header className="relative z-20 flex items-center justify-between px-6 md:px-12 py-6 text-xs md:text-sm">
+          <div className="flex items-center">
+            <img
+              src="/logosymbol.png"
+              alt="Paaran Symbol Logo"
+              className="w-16 h-16 md:w-20 md:h-20 object-contain"
+            />
+          </div>
+          <nav className="hidden md:flex items-center gap-10 text-slate-100 font-semibold text-sm md:text-base tracking-wide">
+  <a href="#bio" className="hover:text-white transition">BIO</a>
+  <a href="#music" className="hover:text-white transition">MUSIC</a>
+  <a href="#photos" className="hover:text-white transition">PHOTOS</a>
+  <a href="#contact" className="hover:text-white transition">CONTACT</a>
+</nav>
+
+        </header>
+
+        {/* 중앙 컨텐츠: 왼쪽에 로고 + 텍스트 */}
+        <div className="relative z-20 w-full flex items-center min-h-[calc(100vh-80px)] px-5 md:px-8 lg:px-12">
+          <div className="w-full max-w-md space-y-6 translate-y-[30px] md:translate-y-[32px]">
+            {/* 한글 로고 */}
+            <div className="w-52 md:w-64">
+              <img
+                src="/logo-kor.png"
+                alt="파아란 로고"
+                className="w-full h-auto object-contain drop-shadow-[0_6px_18px_rgba(0,0,0,0.6)]"
+              />
+            </div>
+
+            {/* 텍스트 묶음 오른쪽 이동 + 자간 조정 */}
+            <div className="space-y-4 translate-x-[30px] md:translate-x-[38px]">
+              {/* 밴드명 / 싱글 정보 */}
+              <div className="space-y-1 text-xs md:text-sm text-slate-200">
+                <p className="font-semibold tracking-wide uppercase">
+                  밴드 파아란
+                </p>
+                <p>Rock / Indie · Debut Single</p>
+                <p>비구름 / Raincloud · 2025.11.22</p>
+              </div>
+
+              {/* 소개 텍스트 */}
+              <p className="text-xs md:text-sm leading-relaxed text-slate-100 max-w-md tracking-normal">
+                모던 록을 기반으로 다양한 장르와 사운드를 지향하는 3인조 밴드
+                파아란의 첫 싱글{" "}
+                <span className="font-medium">‘비구름’</span>은 말하지 못한 감정을
+                빗소리에 비유해 표현한 곡으로, 잊힌 단어들로 전하는 조용한
+                고백과 기다림의 시간을 담았습니다.
+              </p>
+
+              {/* 인스타 */}
+              <div className="text-xs md:text-sm text-slate-200 tracking-normal">
+                @band_paaran
+              </div>
+
+              {/* 버튼 */}
+              <a
+                href={STREAMING_URL}
+                className="px-6 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-white"
+
+              >
+                LISTEN TO “비구름 / RAINCLOUD”
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= CORE EPK CONTENT ================= */}
+      <main className="max-w-6xl mx-auto px-6 md:px-10">
+        {/* 여기부터 bio / music / videos / photos / contact 그대로 */}
+
+<section
+  id="bio"
+  className="min-h-screen flex flex-col justify-center gap-12 py-24"
+>
+  <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
+    Artist Bio
+  </h3>
+
+  <div className="flex flex-col md:flex-row items-start gap-12">
+
+    {/* LEFT: 프로필 사진 (진짜 크게) */}
+    <div className="w-full md:w-auto max-w-md">
+      <img
+        src="/artist-paaran.jpg"
+        alt="파아란 프로필 사진"
+        className="w-full h-auto rounded-3xl shadow-lg object-cover"
+      />
+    </div>
+
+    {/* RIGHT: BIO 텍스트 */}
+    <div className="flex-1 space-y-6 text-base md:text-lg leading-relaxed text-slate-800">
+      <p>
+        밴드 파아란은 보컬 겸 기타 <b>천우진</b>, 기타리스트 <b>유시현</b>, 
+        베이시스트 <b>곽은혁</b>으로 구성된 대한민국의 3인조 밴드이다.
+        모던 록을 기반으로 다양한 장르와 사운드를 지향하며, 밴드의 이름은 
+        “끊임없이 밀려드는 파도, 끝없이 펼쳐진 하늘, 그것이 무엇이든 우리의 
+        노래가 모두의 기억 속에 파아란 색으로 남길 바란다”는 의미를 담고 있다.
+      </p>
+
+      <p>
+        서로 다른 전공과 환경 속에서 음악이라는 공통된 열정을 바탕으로 모인 
+        파아란은 첫 싱글 <b>‘비구름’</b>으로 이제 큰 파도를 타고 더 넓은 바다로 
+        나아가려 한다.
+      </p>
     </div>
   </div>
 </section>
-
-      
-
-      
-
-      {/* ================= CORE EPK CONTENT ================= */}
-      <main className="max-w-5xl mx-auto px-6 md:px-10">
-
-        {/* BIO – 한 화면 꽉 채우는 섹션 */}
-        <section
-          id="bio"
-          className="min-h-screen flex flex-col justify-center gap-6 py-24"
-        >
-          <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
-            Artist Bio
-          </h3>
-          <p className="text-base md:text-lg leading-relaxed text-slate-800">
-            밴드 파아란은 보컬 겸 기타 <b>천우진</b>, 기타리스트{" "}
-            <b>유시현</b>, 베이시스트 <b>곽은혁</b>으로 구성된 대한민국의
-            3인조 밴드이다. 모던 록을 기반으로 다양한 장르와 사운드를
-            지향하며, 밴드의 이름은 “끊임없이 밀려드는 파도, 끝없이
-            펼쳐진 하늘, 그것이 무엇이든 우리의 노래가 모두의 기억 속에
-            파아란 색으로 남길 바란다”는 의미를 담고 있다.
-          </p>
-          <p className="text-base md:text-lg leading-relaxed text-slate-800 max-w-3xl">
-            서로 다른 전공과 환경 속에서 음악이라는 공통된 열정을
-            바탕으로 모인 파아란은 첫 싱글 <b>‘비구름’</b>으로 이제 큰
-            파도를 타고 더 넓은 바다로 나아가려 한다.
-          </p>
-        </section>
 
         {/* MUSIC – 한 화면 꽉 채우는 섹션 */}
         <section
           id="music"
           className="min-h-screen flex flex-col justify-center gap-10 py-24"
         >
+          <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
+  MUSIC / <span className="text-slate-500 text-xl md:text-2xl">1st Single</span>
+</h3>
+
           <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
             <div className="w-full md:w-1/3 max-w-xs">
               <img
