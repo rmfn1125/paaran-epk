@@ -171,7 +171,7 @@ export default function Home() {
 >
   {/* 제목 */}
   <div className="flex items-center justify-between mb-6">
-    <h3 className="text-3xl md:text-5xl font-bold tracking-tight translate-x-[100px]">
+    <h3 className="text-3xl md:text-5xl font-bold tracking-tight translate-x-[130px]">
       Artist Bio
     </h3>
     <span className="px-4 py-1 text-sm rounded-full bg-slate-800 text-white">
@@ -224,7 +224,7 @@ export default function Home() {
   className="min-h-screen flex flex-col justify-center py-24 px-4 md:px-8"
 >
   <div className="max-w-6xl mx-auto w-full space-y-8">
-    <h4 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
+    <h4 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
       Band Members
     </h4>
 
@@ -282,8 +282,8 @@ export default function Home() {
           <p className="text-sm font-bold text-slate-900">곽은혁</p>
           <p className="text-xs text-slate-500">Bass</p>
           <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
-            곡의 바닥을 단단하게 채우는 베이시스트로,
-            리듬과 멜로디 사이를 유연하게 오가며 밴드의 근간을 잡아준다.
+            밴드 파아란의 베이시스트로,
+            넘치는 에너지와 퍼포먼스를 기반으로 밴드의 캐릭터를 잘 나타낸다.
           </p>
         </div>
       </div>
@@ -301,7 +301,7 @@ export default function Home() {
 
           <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center gap-10">
             <div className="bg-white/85 backdrop-blur-sm rounded-3xl shadow-xl p-6 md:p-10 space-y-10">
-              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
+              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
                 MUSIC /{" "}
                 <span className="text-slate-500 text-xl md:text-2xl">
                   1st Single
@@ -403,7 +403,7 @@ export default function Home() {
   {/* 콘텐츠 */}
   <div className="relative max-w-4xl mx-auto px-6 flex flex-col gap-8">
 
-    <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
+    <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
       Visualizer / Lyric Video
     </h3>
 
@@ -455,8 +455,8 @@ export default function Home() {
         >
           
           <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center gap-8">
-            <div className="bg-white/85 backdrop-blur-sm rounded-3xl shadow-xl p-6 md:p-10 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
+            <div className="bg-white/85 backdrop-blur-sm rounded-3xl  p-6 md:p-10 space-y-6">
+              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
                 Photos
               </h3>
               <p className="text-base md:text-lg text-slate-700 max-w-2xl">
