@@ -193,7 +193,7 @@ export default function Home() {
   >
     {/* LEFT PHOTO — 고정 넓이 + 자동 중앙정렬 */}
     <div className="w-full flex justify-center">
-      <div className="w-full max-w-[530px] rounded-3xl shadow-lg overflow-hidden">
+      <div className="w-full max-w-[530px]  shadow-lg overflow-hidden">
         <img
           src="/artist-paaran.jpg"
           alt="파아란 밴드 프로필"
@@ -204,9 +204,9 @@ export default function Home() {
 
     {/* RIGHT TEXT — 고정 넓이 + 균일 간격 */}
     
-    <div className="w-full max-w-[540px] space-y-8 text-[17px] leading-relaxed text-slate-700 pt-40">
+    <div className="w-full max-w-[540px] space-y-5 text-[17px] leading-relaxed text-slate-600 pt-2 md:pt-55">
 
-      <h3 className="text-2xl font-bold text-slate-900 font-bioTitle">
+      <h3 className="text-xl font-bold text-slate-900 font-bioTitle">
         파아란
       </h3>
 
@@ -385,52 +385,95 @@ export default function Home() {
   </div>
 </section>
 
-        {/* ========== 5PAGE : PHOTOS (풀배경) ========== */}
-        <section
-          id="photos"
-          className="relative w-full min-h-screen overflow-hidden"
-        >
-          
-          <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center gap-8">
-            <div className="bg-white/85 backdrop-blur-sm rounded-3xl  p-6 md:p-10 space-y-6">
-              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
-                Photos
-              </h3>
-              <p className="text-base md:text-lg text-slate-700 max-w-2xl">
-                프로필 및 프로모션용으로 사용 가능한 공식 사진과 로고입니다.
-              </p>
+       {/* ========== 5PAGE : PHOTOS (풀배경) ========== */}
+{/* ========== 5PAGE : PHOTOS (풀배경) ========== */}
+<section
+  id="photos"
+  className="relative w-full min-h-screen overflow-hidden"
+>
+  <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center">
+    <div className="bg-white/85 backdrop-blur-sm rounded-3xl p-6 md:p-10 space-y-8 shadow-xl">
 
-              <div className="grid md:grid-cols-3 gap-6">
-                {/* 1) 밴드 프로필 사진 */}
-                <div className="rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-white">
-                  <img
-                    src="/artist-paaran.jpg"
-                    alt="파아란 밴드 프로필"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+      {/* 제목 */}
+      <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
+        Photos
+      </h3>
 
-                {/* 2) 한글 로고 */}
-                <div className="rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-black flex items-center justify-center">
-                  <img
-                    src="/logo-kor.png"
-                    alt="파아란 로고"
-                    className="w-3/4 h-auto object-contain"
-                  />
-                </div>
+      <p className="text-base md:text-lg text-slate-700 max-w-2xl">
+        프로필 및 프로모션용으로 사용 가능한 공식 사진과 로고입니다.
+      </p>
 
-                {/* 3) 심볼 로고 */}
-                <div className="rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-black flex items-center justify-center">
-                  <img
-                    src="/logosymbol.png"
-                    alt="파아란 심볼 로고"
-                    className="w-2/3 h-auto object-contain"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      {/* ===== PHOTOS : 크게 + 간격 거의 없음 ===== */}
+      <div className="grid grid-cols-2 gap-2 justify-items-center">
+        {/* Photo 1 */}
+        <div className="w-full max-w-[450px] aspect-square  overflow-hidden shadow-lg border border-slate-100 bg-white">
+          <img
+            src="/artist-paaran.jpg"
+            alt="파아란 밴드 프로필 1"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Photo 2 */}
+        <div className="w-full max-w-[450px] aspect-square  overflow-hidden shadow-lg border border-slate-100 bg-white">
+          <img
+            src="/artist2.jpg"
+            alt="파아란 밴드 프로필 2"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+
+      {/* ===== LOGO TITLE ===== */}
+      <h4 className="text-xl md:text-2xl font-semibold pt-4">
+        Logos
+      </h4>
+
+      {/* ===== LOGOS : 살짝 작게 + 간격 최소 ===== */}
+      <div className="grid grid-cols-2 gap-2 justify-items-center">
+
+        {/* Logo 1 */}
+        <div className="w-full max-w-[300px] aspect-square rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-black flex items-center justify-center">
+          <img
+            src="/logosymbol.png"
+            alt="파아란 심볼 로고"
+            className="w-3/4 h-auto object-contain"
+          />
+        </div>
+
+        {/* Logo 2 */}
+        <div className="w-full max-w-[300px] aspect-square rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-black flex items-center justify-center">
+          <img
+            src="/logo-kor.png"
+            alt="파아란 한글 로고"
+            className="w-3/4 h-auto object-contain"
+          />
+        </div>
+
+        {/* Logo 3 */}
+        <div className="w-full max-w-[300px] aspect-square rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-white flex items-center justify-center">
+          <img
+            src="/logoblue.png"
+            alt="파아란 블루 로고"
+            className="w-3/4 h-auto object-contain"
+          />
+        </div>
+
+        {/* Logo 4 */}
+        <div className="w-full max-w-[300px] aspect-square rounded-3xl overflow-hidden shadow-lg border border-slate-100 bg-white flex items-center justify-center">
+          <img
+            src="/logokorblue.png"
+            alt="파아란 한글 블루 로고"
+            className="w-3/4 h-auto object-contain"
+          />
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
         {/* ========== 6PAGE : CONTACT (풀배경) ========== */}
         <section
