@@ -135,11 +135,11 @@ export default function Home() {
               </div>
 
               {/* 소개 텍스트 */}
-              <p className="text-xs md:text-sm leading-relaxed text-slate-100 max-w-md tracking-normal">
+              <p className="text-[11px] md:text-sm leading-relaxed text-slate-100 max-w-md tracking-normal">
                 모던 록을 기반으로 다양한 장르와 사운드를 지향하는 3인조 밴드
-                파아란의 첫 싱글{" "}
+                파아란의<br className="hidden md:block" /> <br className="block md:hidden" />첫 싱글{" "}
                 <span className="font-medium">‘비구름’</span>은 말하지 못한 감정을
-                빗소리에 비유해 표현한 곡으로, 잊힌 단어들로 전하는 조용한
+                빗소리에 비유해 표현한 곡으로, <br className="hidden md:block" /><br className="block md:hidden" />잊힌 단어들로 전하는 조용한
                 고백과 기다림의 시간을 담았습니다.
               </p>
 
