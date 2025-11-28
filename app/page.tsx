@@ -16,7 +16,7 @@ const STREAMING_YT =
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-sky-10 to-white text-slate-900">
+    <div className="min-h-screen w-full bg-white from-sky-10 to-white text-slate-900">
       {/* --- FIXED RIGHT ICON BAR --- */}
       <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6">
         <a
