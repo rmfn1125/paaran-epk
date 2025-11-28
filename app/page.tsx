@@ -167,11 +167,11 @@ export default function Home() {
 {/* ================= ARTIST BIO — FULL PAGE ================= */}
 <section
   id="bio"
-  className="min-h-screen w-full py-24 px-6 md:px-12 lg:px-20"
+  className="min-h-screen w-full py-24 px-6 md:px-12 lg:px-20 bg-white"
 >
   {/* 제목 */}
-  <div className="flex items-center justify-between mb-6">
-    <h3 className="text-3xl md:text-5xl font-bold tracking-tight translate-x-[130px]">
+  <div className="flex items-center justify-between mb-8">
+    <h3 className="text-3xl md:text-5xl font-bold tracking-tight">
       Artist Bio
     </h3>
     <span className="px-4 py-1 text-sm rounded-full bg-slate-800 text-white">
@@ -180,24 +180,33 @@ export default function Home() {
   </div>
 
   {/* 가로줄 */}
-  <div className="w-full h-px bg-slate-500 mb-10 translate-y-[10px]"></div>
+  <div className="w-full h-px bg-slate-400 mb-12"></div>
 
-  {/* 전체 콘텐츠 감싸는 그리드 */}
-  <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-start">
-
-    {/* LEFT PHOTO (조금 작은 버전) */}
-    <div className="w-full max-w-lg mx-auto shadow-lg overflow-hidden translate-y-[50px]">
-      <img
-        src="/artist-paaran.jpg"
-        alt="파아란 밴드 프로필"
-        className="w-full h-auto object-cover"
-      />
+  {/* 콘텐츠: 간격 완전 고정 버전 */}
+  <div
+    className="
+      grid grid-cols-1 lg:grid-cols-2 
+      gap-20
+      items-start
+      max-w-[1400px] mx-auto
+    "
+  >
+    {/* LEFT PHOTO — 고정 넓이 + 자동 중앙정렬 */}
+    <div className="w-full flex justify-center">
+      <div className="w-full max-w-[530px] rounded-3xl shadow-lg overflow-hidden">
+        <img
+          src="/artist-paaran.jpg"
+          alt="파아란 밴드 프로필"
+          className="w-full h-auto object-cover"
+        />
+      </div>
     </div>
-    {/* TEXT */}
-    <div className="space-y-8 text-base md:text-base leading-relaxed text-slate-600 -translate-x-[80px] translate-y-[240px]  ">
 
-      <h3 className="text-xl md:text-xl font-bold text-slate-900 font-bioTitle">
-      파아란
+    {/* RIGHT TEXT — 고정 넓이 + 균일 간격 */}
+    <div className="w-full max-w-[540px] space-y-8 text-[17px] leading-relaxed text-slate-700">
+
+      <h3 className="text-2xl font-bold text-slate-900 font-bioTitle">
+        파아란
       </h3>
 
       <p>
@@ -217,79 +226,6 @@ export default function Home() {
   </div>
 </section>
 
-
-{/* =============== BAND MEMBERS (2페이지 느낌) =============== */}
-<section
-  id="members"
-  className="min-h-screen flex flex-col justify-center py-24 px-4 md:px-8"
->
-  <div className="max-w-6xl mx-auto w-full space-y-8">
-    <h4 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
-      Band Members
-    </h4>
-
-    <div className="grid gap-6 md:grid-cols-3">
-      {/* Woojin */}
-      <div className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden flex flex-col">
-        <div className="w-full aspect-[4/5] overflow-hidden">
-          <img
-            src="/members/woojin.jpg"
-            alt="천우진 프로필"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="p-4 md:p-5 space-y-1">
-          <p className="text-sm font-bold text-black">천우진</p>
-          <p className="text-xs text-slate-500">
-            Vocal / Guitar · Songwriting
-          </p>
-          <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
-            파아란의 보컬이자 기타리스트로, 첫 싱글 &lt;비구름&gt;의 작사·작곡을 맡았다.
-            말로 다 하지 못한 마음을 음악으로 풀어내며 밴드의 정서적 색을 이끌어간다.
-          </p>
-        </div>
-      </div>
-
-      {/* Sihyun */}
-      <div className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden flex flex-col">
-        <div className="w-full aspect-[4/5] overflow-hidden">
-          <img
-            src="/members/sihyun.jpg"
-            alt="유시현 프로필"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="p-4 md:p-5 space-y-1">
-          <p className="text-sm font-bold text-slate-900">유시현</p>
-          <p className="text-xs text-slate-500">Guitar</p>
-          <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
-            섬세한 질감과 톤으로 파아란의 사운드를 만들어가는 기타리스트.
-            라이브에서는 디테일과 에너지를 동시에 담아낸다.
-          </p>
-        </div>
-      </div>
-
-      {/* Eunhyeok */}
-      <div className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden flex flex-col">
-        <div className="w-full aspect-[4/5] overflow-hidden">
-          <img
-            src="/members/eunhyeok.jpg"
-            alt="곽은혁 프로필"
-            className="w-full h-full object-cover"
-          />
-        </div>
-        <div className="p-4 md:p-5 space-y-1">
-          <p className="text-sm font-bold text-slate-900">곽은혁</p>
-          <p className="text-xs text-slate-500">Bass</p>
-          <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
-            밴드 파아란의 베이시스트로,
-            넘치는 에너지와 퍼포먼스를 기반으로 밴드의 캐릭터를 잘 나타낸다.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
 
         {/* ========== 3PAGE : MUSIC (풀배경) ========== */}
