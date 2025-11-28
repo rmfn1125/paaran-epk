@@ -194,11 +194,11 @@ export default function Home() {
       />
     </div>
     {/* TEXT */}
-    <div className="space-y-8 text-base md:text-lg leading-relaxed text-slate-800 -translate-x-[62px] translate-y-[140px]">
+    <div className="space-y-8 text-base md:text-base leading-relaxed text-slate-600 -translate-x-[80px] translate-y-[240px]  ">
 
-      <h4 className="text-xl md:text-2xl font-bold text-slate-900">
-      밴드 파아란
-      </h4>
+      <h3 className="text-xl md:text-xl font-bold text-slate-900 font-bioTitle">
+      파아란
+      </h3>
 
       <p>
         밴드 파아란은 보컬 겸 기타 <b>천우진</b>, 기타리스트 <b>유시현</b>,
@@ -497,85 +497,114 @@ export default function Home() {
 
         {/* ========== 6PAGE : CONTACT (풀배경) ========== */}
         <section
-          id="contact"
-          className="relative w-full min-h-screen overflow-hidden"
-        >
-          
+  id="contact"
+  className="min-h-screen flex flex-col justify-center py-24 px-6 md:px-12 lg:px-20"
+>
+  {/* Title */}
+  <h3 className="text-3xl md:text-5xl font-bold tracking-tight mb-6">
+    Contact
+  </h3>
 
-          <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center">
-            <div className="bg-white/90 backdrop-blur-sm  shadow-xl p-6 md:p-10 space-y-10">
-              <h3 className="text-xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
-                Contact
-              </h3>
+  <p className="text-slate-600 text-base md:text-lg mb-14 max-w-2xl leading-relaxed">
+    공연·프레스·콜라보 등 모든 문의는 아래 연락처로 편하게 남겨주세요.
+  </p>
 
-              <div className="grid md:grid-cols-2 gap-10">
-                {/* Booking / Live Inquiry */}
-                <div className="bg-white shadow-md rounded-2xl p-6 border border-slate-200 space-y-2">
-                  <p className="font-semibold text-lg">Booking / Live Inquiry</p>
-                  <p>
-                    Manager · <b>류진하</b>
-                  </p>
-                  <p>Phone · 010-2609-5721</p>
-                  <p>
-                    Email ·{" "}
-                    <a
-                      href="mailto:jinainc2004@gmail.com"
-                      className="underline"
-                    >
-                      fbwlsgk5721@naver.com
-                    </a>
-                  </p>
-                </div>
+  {/* Grid 2 columns */}
+  <div className="grid md:grid-cols-2 gap-10 w-full">
 
-                {/* Press / Media */}
-                <div className="bg-white shadow-md rounded-2xl p-6 border border-slate-200 space-y-2">
-                  <p className="font-semibold text-lg">Press / Media</p>
-                  <p>
-                    Email ·{" "}
-                    <a
-                      href="mailto:band.deepblue@gmail.com"
-                      className="underline"
-                    >
-                      band.deepblue@gmail.com
-                    </a>
-                  </p>
-                </div>
+    {/* BLOCK 1 */}
+    <div className="p-6 bg-white/70 backdrop-blur-lg  shadow-md border border-slate-200">
+      <p className="text-lg font-semibold mb-2">Booking / Live Inquiry</p>
+      <p className="text-slate-700">Manager · <b>류진하 Jinha Ryu</b></p>
 
-                {/* Creative / Artist Contact */}
-                <div className="bg-white shadow-md rounded-2xl p-6 border border-slate-200 space-y-2">
-                  <p className="font-semibold text-lg">
-                    Creative / Artist Contact
-                  </p>
-                  <p>Woojin Cheon</p>
-                  <p>Phone · 010-5434-6389</p>
-                  <p>
-                    Email ·{" "}
-                    <a
-                      href="mailto:rmfn1125@naver.com"
-                      className="underline"
-                    >
-                      rmfn1125@naver.com
-                    </a>
-                  </p>
-                </div>
+      <div className="mt-3 space-y-1">
+        <p className="flex items-center gap-2 text-slate-700">
+          📞 <span>010-2609-5721</span>
+        </p>
+        <p className="flex items-center gap-2 text-slate-700">
+          ✉️
+          <a href="mailto:fbwlsgk5721@naver.com" className="underline">
+            jinainc2004@gmail.com
+          </a>
+        </p>
+      </div>
+    </div>
 
-                {/* General / Business */}
-                <div className="bg-white shadow-md rounded-2xl p-6 border border-slate-200 space-y-2">
-                  <p className="font-semibold text-lg">General / Business</p>
-                  <p>
-                    Email ·{" "}
-                    <a
-                      href="mailto:band.deepblue@gmail.com"
-                      className="underline"
-                    >
-                      band.deepblue@gmail.com
-                    </a>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+    {/* BLOCK 2 */}
+    <div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
+      <p className="text-lg font-semibold mb-2">Press / Media</p>
+
+      <div className="mt-3 space-y-1">
+        <p className="flex items-center gap-2 text-slate-700">
+          ✉️
+          <a href="mailto:band.deepblue@gmail.com" className="underline">
+            band.deepblue@gmail.com
+          </a>
+        </p>
+        <p className="flex items-center gap-2 text-slate-700">
+          📷
+          <a
+            href="https://instagram.com/band_paaran"
+            target="_blank"
+            className="underline"
+          >
+            instagram@band_paaran
+            </a>
+        </p>
+      </div>
+    </div>
+
+    {/* BLOCK 3 */}
+    <div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
+      <p className="text-lg font-semibold mb-2">Creative / Artist Contact</p>
+      <p className="text-slate-700"></p><b>천우진 Woojin Chun</b>
+
+      <div className="mt-3 space-y-1">
+        <p className="flex items-center gap-2 text-slate-700">
+          📞 <span>010-5434-6389</span>
+        </p>
+        <p className="flex items-center gap-2 text-slate-700">
+          ✉️
+          <a href="mailto:rmfn1125@naver.com" className="underline">
+            rmfn1125@naver.com
+          </a>
+        </p>
+        
+      </div>
+    </div>
+
+    {/* BLOCK 4 */}
+    <div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
+      <p className="text-lg font-semibold mb-2">General / Business</p>
+
+      <div className="mt-3 space-y-1">
+        <p className="flex items-center gap-2 text-slate-700">
+          ✉️
+          <a href="mailto:band.deepblue@gmail.com" className="underline">
+            band.deepblue@gmail.com
+          </a>
+        </p>
+        <p className="flex items-center gap-2 text-slate-700">
+          📷
+          <a
+            href="https://instagram.com/band_paaran"
+            target="_blank"
+            className="underline"
+          >
+            instagram@band_paaran
+            </a>
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+  {/* Bottom message */}
+  <p className="text-center text-slate-500 text-xs md:text-sm mt-16 tracking-wide">
+    We are open for live shows, collaborations, and creative projects.
+  </p>
+</section>
+
       </main>
 
       <footer className="border-t border-slate-100 py-6 text-center text-xs text-slate-500">
