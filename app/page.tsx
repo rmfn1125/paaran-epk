@@ -16,7 +16,7 @@ const STREAMING_YT =
 
 export default function Home() {
   return (
-    <div className="min-h-screen w-full bg-gradient-to-b from-sky-50 to-white text-slate-900">
+    <div className="min-h-screen w-full bg-gradient-to-b from-sky-10 to-white text-slate-900">
       {/* --- FIXED RIGHT ICON BAR --- */}
       <div className="fixed right-6 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6">
         <a
@@ -148,6 +148,7 @@ export default function Home() {
                 @band_paaran
               </div>
 
+
               {/* 버튼 (글래스 스타일) */}
               <a
                 href={STREAMING_URL}
@@ -163,55 +164,60 @@ export default function Home() {
       {/* ================= CORE EPK CONTENT ================= */}
       <main className="w-full">
         {/* =============== ARTIST BIO (1페이지) =============== */}
+{/* ================= ARTIST BIO — FULL PAGE ================= */}
 <section
   id="bio"
-  className="min-h-screen flex flex-col justify-center py-24 px-4 md:px-8"
+  className="min-h-screen w-full py-24 px-6 md:px-12 lg:px-20"
 >
-  <div className="max-w-6xl mx-auto w-full">
-    {/* 상단 타이틀 라인 */}
-    <div className="flex items-center justify-between border-b border-slate-200 pb-6 mb-10">
-      <h3 className="text-3xl md:text-4xl font-extrabold tracking-tight text-slate-900">
-        Artist Bio
-      </h3>
-      <span className="inline-flex items-center px-4 py-1 rounded-full bg-slate-900 text-white text-xs md:text-sm">
-        profile
-      </span>
+  {/* 제목 */}
+  <div className="flex items-center justify-between mb-6">
+    <h3 className="text-3xl md:text-5xl font-bold tracking-tight translate-x-[100px]">
+      Artist Bio
+    </h3>
+    <span className="px-4 py-1 text-sm rounded-full bg-slate-800 text-white">
+      profile
+    </span>
+  </div>
+
+  {/* 가로줄 */}
+  <div className="w-full h-px bg-slate-500 mb-10 translate-y-[10px]"></div>
+
+  {/* 전체 콘텐츠 감싸는 그리드 */}
+  <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-14 lg:gap-20 items-start">
+
+    {/* LEFT PHOTO (조금 작은 버전) */}
+    <div className="w-full max-w-lg mx-auto shadow-lg overflow-hidden translate-y-[50px]">
+      <img
+        src="/artist-paaran.jpg"
+        alt="파아란 밴드 프로필"
+        className="w-full h-auto object-cover"
+      />
     </div>
+    {/* TEXT */}
+    <div className="space-y-8 text-base md:text-lg leading-relaxed text-slate-800 -translate-x-[62px] translate-y-[140px]">
 
-    {/* 메인 컨텐츠 : 왼쪽 사진 / 오른쪽 텍스트 */}
-    <div className="flex flex-col md:flex-row items-start gap-10 md:gap-16">
-      {/* 사진 */}
-      <div className="w-full md:w-[40%] flex-shrink-0">
-        <img
-          src="/artist-paaran.jpg"
-          alt="파아란 프로필 사진"
-          className="w-full h-auto shadow-lg object-cover"
-        />
-      </div>
+      <h4 className="text-xl md:text-2xl font-bold text-slate-900">
+      밴드 파아란
+      </h4>
 
-      {/* 텍스트 */}
-      <div className="flex-1 space-y-5 text-slate-800">
-        <p className="text-base md:text-lg font-semibold text-blue-900">
-          파아란
-        </p>
+      <p>
+        밴드 파아란은 보컬 겸 기타 <b>천우진</b>, 기타리스트 <b>유시현</b>,
+        베이시스트 <b>곽은혁</b>으로 구성된 대한민국의 3인조 밴드이다.
+        모던 록을 기반으로 다양한 장르와 사운드를 지향하며,
+        밴드의 이름은 “끊임없이 밀려드는 파도, 끝없이 펼쳐진 하늘,
+        그것이 무엇이든 우리의 노래가 모두의 기억 속에 파아란 색으로 남길 바란다”는 의미를 담고 있다.
+      </p>
 
-        <p className="text-sm md:text-base leading-relaxed">
-          밴드 파아란은 보컬 겸 기타 <b>천우진</b>, 기타리스트 <b>유시현</b>, 
-          베이시스트 <b>곽은혁</b>으로 구성된 대한민국의 3인조 밴드이다.
-          모던 록을 기반으로 다양한 장르와 사운드를 지향하며, 밴드의 이름은
-          “끊임없이 밀려드는 파도, 끝없이 펼쳐진 하늘, 그것이 무엇이든 우리의
-          노래가 모두의 기억 속에 파아란 색으로 남길 바란다”는 의미를 담고 있다.
-        </p>
+      <p>
+        서로 다른 전공과 환경 속에서 음악이라는 공통된 열정을 바탕으로 모인 파아란은
+        첫 싱글 <b>‘비구름’</b>으로 이제 큰 파도를 타고 더 넓은 바다로 나아가려 한다.
+      </p>
 
-        <p className="text-sm md:text-base leading-relaxed">
-          서로 다른 전공과 환경 속에서 음악이라는 공통된 열정을 바탕으로 모인
-          파아란은 첫 싱글 <b>‘비구름’</b>으로 이제 큰 파도를 타고 더 넓은 바다로
-          나아가려 한다.
-        </p>
-      </div>
     </div>
   </div>
 </section>
+
+
 {/* =============== BAND MEMBERS (2페이지 느낌) =============== */}
 <section
   id="members"
@@ -291,13 +297,7 @@ export default function Home() {
           id="music"
           className="relative w-full min-h-screen overflow-hidden"
         >
-          <div className="absolute inset-0">
-            <img
-              src="/epk배경.png"
-              alt="EPK background"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          
 
           <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center gap-10">
             <div className="bg-white/85 backdrop-blur-sm rounded-3xl shadow-xl p-6 md:p-10 space-y-10">
@@ -330,7 +330,7 @@ export default function Home() {
                     담았습니다. 비가 그친 뒤에도 비가 머물던 자리처럼 계속되는
                     마음의 여운을 그려봅니다.
                   </p>
-                  <div className="text-xs md:text-sm text-slate-700 leading-relaxed bg-sky-50 border border-sky-100  p-4 max-w-md">
+                  <div className="text-xs md:text-sm text-slate-700 leading-relaxed bg-blue-20 border border-sky-100  p-4 max-w-md">
                     <p>
                       언제부턴가
                       <br />
@@ -399,15 +399,7 @@ export default function Home() {
   id="videos"
   className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center gap-8 py-24"
 >
-  {/* 전체 배경 */}
-  <div className="absolute inset-0">
-    <img
-      src="/epk배경.png"
-      alt="EPK background"
-      className="w-full h-full object-cover"
-    />
-  </div>
-
+ 
   {/* 콘텐츠 */}
   <div className="relative max-w-4xl mx-auto px-6 flex flex-col gap-8">
 
@@ -417,7 +409,8 @@ export default function Home() {
 
     <p className="text-base md:text-lg text-slate-700 max-w-2xl">
       인스타그램 릴 형식으로 제작된 파아란의 첫 번째 싱글 [비구름]의
-      비주얼라이저 &amp; 리릭 비디오입니다.
+      Visualizer &amp; Lyric Video
+      <br />
       아래 썸네일을 클릭하면 인스타그램 릴로 이동합니다.
     </p>
 
@@ -460,14 +453,7 @@ export default function Home() {
           id="photos"
           className="relative w-full min-h-screen overflow-hidden"
         >
-          <div className="absolute inset-0">
-            <img
-              src="/epk배경.png"
-              alt="EPK background"
-              className="w-full h-full object-cover"
-            />
-          </div>
-
+          
           <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center gap-8">
             <div className="bg-white/85 backdrop-blur-sm rounded-3xl shadow-xl p-6 md:p-10 space-y-6">
               <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
@@ -514,16 +500,10 @@ export default function Home() {
           id="contact"
           className="relative w-full min-h-screen overflow-hidden"
         >
-          <div className="absolute inset-0">
-            <img
-              src="/epk배경.png"
-              alt="EPK background"
-              className="w-full h-full object-cover"
-            />
-          </div>
+          
 
           <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center">
-            <div className="bg-white/90 backdrop-blur-sm rounded-3xl shadow-xl p-6 md:p-10 space-y-10">
+            <div className="bg-white/90 backdrop-blur-sm  shadow-xl p-6 md:p-10 space-y-10">
               <h3 className="text-xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
                 Contact
               </h3>
