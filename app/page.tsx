@@ -29,7 +29,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://youtube.com"
+          href="https://www.youtube.com/@band_paaran"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -38,7 +38,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://open.spotify.com"
+          href="https://open.spotify.com/album/7lnnDnAWk8HWAuoEt4t4t9"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -47,7 +47,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://music.apple.com"
+          href="https://music.apple.com/us/album/raincloud-single/1854316419"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -56,7 +56,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://www.melon.com"
+          href="https://www.melon.com/album/detail.htm?albumId=12402188&snsGate=Y"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -65,7 +65,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://www.genie.co.kr"
+          href="https://genie.co.kr/detail/albumInfo?axnm=86965573"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
