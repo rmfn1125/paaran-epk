@@ -476,7 +476,7 @@ export default function Home() {
 
 
         {/* ========== 6PAGE : CONTACT (풀배경) ========== */}
-        <section
+       <section
   id="contact"
   className="min-h-screen flex flex-col justify-center py-24 px-6 md:px-12 lg:px-20"
 >
@@ -489,11 +489,32 @@ export default function Home() {
     공연·프레스·콜라보 등 모든 문의는 아래 연락처로 편하게 남겨주세요.
   </p>
 
-  {/* Grid 2 columns */}
-  <div className="grid md:grid-cols-2 gap-10 w-full">
+  {/* 🔥 3개 박스 가로 1줄 */}
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+<div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
+      <p className="text-lg font-semibold mb-2">General / Business</p>
 
+      <div className="mt-3 space-y-1">
+        <p className="flex items-center gap-2 text-slate-700">
+          ✉️
+          <a href="mailto:band.deepblue@gmail.com" className="underline">
+            band.deepblue@gmail.com
+          </a>
+        </p>
+        <p className="flex items-center gap-2 text-slate-700">
+          📷
+          <a
+            href="https://instagram.com/band_paaran"
+            target="_blank"
+            className="underline"
+          >
+            instagram@band_paaran
+          </a>
+        </p>
+      </div>
+    </div>
     {/* BLOCK 1 */}
-    <div className="p-6 bg-white/70 backdrop-blur-lg  shadow-md border border-slate-200">
+    <div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
       <p className="text-lg font-semibold mb-2">Booking / Live Inquiry</p>
       <p className="text-slate-700">Manager · <b>류진하 Jinha Ryu</b></p>
 
@@ -512,32 +533,8 @@ export default function Home() {
 
     {/* BLOCK 2 */}
     <div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
-      <p className="text-lg font-semibold mb-2">Press / Media</p>
-
-      <div className="mt-3 space-y-1">
-        <p className="flex items-center gap-2 text-slate-700">
-          ✉️
-          <a href="mailto:band.deepblue@gmail.com" className="underline">
-            band.deepblue@gmail.com
-          </a>
-        </p>
-        <p className="flex items-center gap-2 text-slate-700">
-          📷
-          <a
-            href="https://instagram.com/band_paaran"
-            target="_blank"
-            className="underline"
-          >
-            instagram@band_paaran
-            </a>
-        </p>
-      </div>
-    </div>
-
-    {/* BLOCK 3 */}
-    <div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
       <p className="text-lg font-semibold mb-2">Creative / Artist Contact</p>
-      <p className="text-slate-700"></p><b>천우진 Woojin Chun</b>
+      <p className="text-slate-700"><b>천우진 Woojin Chun</b></p>
 
       <div className="mt-3 space-y-1">
         <p className="flex items-center gap-2 text-slate-700">
@@ -549,33 +546,11 @@ export default function Home() {
             rmfn1125@naver.com
           </a>
         </p>
-        
       </div>
     </div>
 
-    {/* BLOCK 4 */}
-    <div className="p-6 bg-white/70 backdrop-blur-lg shadow-md border border-slate-200">
-      <p className="text-lg font-semibold mb-2">General / Business</p>
-
-      <div className="mt-3 space-y-1">
-        <p className="flex items-center gap-2 text-slate-700">
-          ✉️
-          <a href="mailto:band.deepblue@gmail.com" className="underline">
-            band.deepblue@gmail.com
-          </a>
-        </p>
-        <p className="flex items-center gap-2 text-slate-700">
-          📷
-          <a
-            href="https://instagram.com/band_paaran"
-            target="_blank"
-            className="underline"
-          >
-            instagram@band_paaran
-            </a>
-        </p>
-      </div>
-    </div>
+    {/* BLOCK 3 */}
+    
 
   </div>
 
@@ -584,6 +559,7 @@ export default function Home() {
     We are open for live shows, collaborations, and creative projects.
   </p>
 </section>
+
 
       </main>
 
