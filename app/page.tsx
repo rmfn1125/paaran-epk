@@ -207,7 +207,7 @@ export default function Home() {
     <div className="w-full max-w-[540px] space-y-5 text-[17px] leading-relaxed text-slate-600 pt-2 md:pt-55">
 
       <h3 className="text-xl font-bold text-slate-900 font-bioTitle">
-        파아란
+      파아란
       </h3>
 
       <p>
@@ -225,9 +225,79 @@ export default function Home() {
 
     </div>
   </div>
+  </section> 
+
+
+{/* =============== BAND MEMBERS (2페이지 느낌) =============== */}
+<section
+  id="members"
+  className="min-h-screen flex flex-col justify-center py-24 px-4 md:px-8"
+>
+  <div className="max-w-6xl mx-auto w-full space-y-8">
+    <h4 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
+      Band Members
+    </h4>
+
+    <div className="grid gap-6 md:grid-cols-3">
+      {/* Woojin */}
+      <div className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden flex flex-col">
+        <div className="w-full aspect-[4/5] overflow-hidden">
+          <img
+            src="/members/woojin.jpg"
+            alt="천우진 프로필"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="p-4 md:p-5 space-y-1">
+          <p className="text-sm font-semibold text-slate-900">천우진</p>
+          <p className="text-xs text-slate-500">
+            Vocal / Guitar · Songwriting
+          </p>
+          <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
+            
+          </p>
+        </div>
+      </div>
+
+      {/* Sihyun */}
+      <div className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden flex flex-col">
+        <div className="w-full aspect-[4/5] overflow-hidden">
+          <img
+            src="/members/sihyun.jpg"
+            alt="유시현 프로필"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="p-4 md:p-5 space-y-1">
+          <p className="text-sm font-semibold text-slate-900">유시현</p>
+          <p className="text-xs text-slate-500">Guitar</p>
+          <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
+            
+          </p>
+        </div>
+      </div>
+
+      {/* Eunhyeok */}
+      <div className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden flex flex-col">
+        <div className="w-full aspect-[4/5] overflow-hidden">
+          <img
+            src="/members/eunhyeok.jpg"
+            alt="곽은혁 프로필"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <div className="p-4 md:p-5 space-y-1">
+          <p className="text-sm font-semibold text-slate-900">곽은혁</p>
+          <p className="text-xs text-slate-500">Bass</p>
+          <p className="text-xs md:text-sm text-slate-700 mt-2 leading-relaxed">
+            
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
-
-
 
         {/* ========== 3PAGE : MUSIC (풀배경) ========== */}
         <section
