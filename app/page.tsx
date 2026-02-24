@@ -96,11 +96,15 @@ export default function Home() {
             />
           </div>
           <nav className="hidden md:flex items-center gap-10 text-slate-100 font-semibold text-sm md:text-base tracking-wide">
+            
+            <a href="#release" className="hover:text-white transition">
+              RELEASE
+              </a>
             <a href="#bio" className="hover:text-white transition">
               BIO
             </a>
             <a href="#music" className="hover:text-white transition">
-              MUSIC
+              ARCHIVE
             </a>
             <a href="#photos" className="hover:text-white transition">
               PHOTOS
@@ -124,23 +128,25 @@ export default function Home() {
             </div>
 
             {/* 텍스트 묶음 오른쪽 이동 + 자간 조정 */}
-            <div className="space-y-4 translate-x-[30px] md:translate-x-[38px]">
+            <div className="space-y-3 translate-x-[30px] md:translate-x-[38px]">
               {/* 밴드명 / 싱글 정보 */}
               <div className="space-y-1 text-xs md:text-sm text-slate-200">
                 <p className="font-semibold tracking-wide uppercase">
                   밴드 파아란
                 </p>
-                <p>Rock / Indie · Debut Single</p>
-                <p>비구름 / Raincloud · 2025.11.22</p>
+                <p>Rock / Indie · Single</p>
+                <p>우리는 같은 계절을 지나 / Passing Through the winter · 2026.02.28</p>
               </div>
-
               {/* 소개 텍스트 */}
               <p className="text-[11px] md:text-sm leading-relaxed text-slate-100 max-w-md tracking-normal">
-                모던 록을 기반으로 다양한 장르와 사운드를 지향하는 3인조 밴드
-                파아란의<br className="hidden md:block" /> <br className="block md:hidden" />첫 싱글{" "}
-                <span className="font-medium">‘비구름’</span>은 말하지 못한 감정을
-                빗소리에 비유해 표현한 곡으로, <br className="hidden md:block" /><br className="block md:hidden" />잊힌 단어들로 전하는 조용한
-                고백과 기다림의 시간을 담았습니다.
+               
+                <span className="font-medium"></span> <br className="hidden md:block" /><br className="block md:hidden" />
+
+겨울을 버티고 있는 나에게,<p></p>
+이번 계절이 유독 길게 느껴지는 이들에게 <p></p>
+이 노래를 건네고 싶습니다. 
+ <p></p> <p></p> 
+늘 그랬듯 겨울은 지나갈 것이기에!
               </p>
 
               {/* 인스타 */}
@@ -154,7 +160,7 @@ export default function Home() {
                 href={STREAMING_URL}
                 className="px-6 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-white"
               >
-                LISTEN TO “비구름 / RAINCLOUD”
+                LISTEN TO “우리는 같은 계절을 지나”
               </a>
             </div>
           </div>
@@ -219,8 +225,7 @@ export default function Home() {
       </p>
 
       <p>
-        서로 다른 전공과 환경 속에서 음악이라는 공통된 열정을 바탕으로 모인 파아란은
-        첫 싱글 <b>‘비구름’</b>으로 이제 큰 파도를 타고 더 넓은 바다로 나아가려 한다.
+        
       </p>
 
     </div>
@@ -235,7 +240,7 @@ export default function Home() {
 >
   <div className="max-w-6xl mx-auto w-full space-y-8">
     <h4 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-blue-500 pl-3">
-      Band Members
+      Members
     </h4>
 
     <div className="grid gap-6 md:grid-cols-3">
@@ -299,9 +304,116 @@ export default function Home() {
 
 </section>
 
+ {/* ========== 3PAGE : MUSIC (풀배경) ========== */}
+        <section
+          id="release"
+          className="relative w-full min-h-screen overflow-hidden"
+        >
+          
+
+          <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center gap-10">
+            <div className="bg-slate-200/80 backdrop-blur-sm rounded-3xl shadow-xl p-6 md:p-10 space-y-10">
+              <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
+                RELEASE /{" "}
+                <span className="text-slate-500 text-xl md:text-2xl">
+                  Latest Single
+                </span>
+              </h3>
+
+              <div className="flex flex-col md:flex-row gap-10 items-center md:items-start">
+                <div className="w-full md:w-1/3 max-w-xs">
+                  <img
+                    src="/passing artwork.JPG"
+                    alt="비구름 앨범 커버"
+                    className="w-full rounded-3xl shadow-lg border border-slate-100"
+                  />
+                </div>
+                <div className="flex-1 space-y-5">
+                  <h3 className="text-2xl md:text-3xl font-semibold tracking-tight leading-tight">
+  <span className="block">
+    우리는 같은 계절을 지나
+  </span>
+  <span className="block text-xl md:text-2xl text-slate-400 font-medium mt-1">
+    Passing Through the Winter
+  </span>
+</h3>
+                  <p className="text-xs md:text-sm text-slate-500">
+                    Single · Rock / Indie · 2026.02.28
+                  </p>
+                  <p className="text-base md:text-lg leading-relaxed text-slate-800">
+                    파아란의 두 번째 싱글 〈우리는 같은 계절을 지나〉는 각자의 자리에서 긴 계절을 지나고 있는 이들에게 건네는 곡입니다.
+ <br />유난히 길게 느껴지는 시간 속에서, 결국 우리는 각자의 방식으로 이 시간을 건너고 있다 이야기하고 싶었습니다.
+ <br />이 곡이 지금 겨울을 버티고 있는 분들께 작은 공감으로 닿기를 바랍니다.
+
+                  </p>
+                  <div className="text-xs md:text-sm text-slate-700 leading-relaxed bg-blue-20 border border-sky-100  p-4 max-w-md">
+                    <p>
+                      겨울을 버티고 있는 나에게, 
+                      <br />
+                      이번 계절이 유독 길게 느껴지는 이들에게 
+                      <br />
+                      이 노래를 건네고 싶습니다. 
+                      <br />
+                      늘 그랬듯 겨울은 지나갈 것이기에!
+                    </p>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3 pt-2 text-xs md:text-sm">
+                    <a
+                      href={STREAMING_URL}
+                      className="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-sky-600 transition"
+                    >
+                      All Platforms
+                    </a>
+                    <a
+                      href={STREAMING_SPOTIFY}
+                      className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
+                    >
+                      Spotify
+                    </a>
+                    <a
+                      href={STREAMING_APPLE}
+                      className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
+                    >
+                      Apple Music
+                    </a>
+                    <a
+                      href={STREAMING_YT}
+                      className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
+                    >
+                      YouTube Music
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-8 text-xs md:text-sm text-slate-800 bg-slate-50 border border-slate-100 rounded-2xl p-6 mt-2">
+                <div className="space-y-1">
+                  <p className="font-semibold mb-2">Credits</p>
+                  <p>Produced by 파아란</p>
+                  <p>Song &amp; Lyrics by 천우진</p>
+                  <p>Arranged by 천우진, 곽은혁, 유시현, 최수현, 이현승, 류진하 </p>
+                  <p>Vocal / Guitar · 천우진</p>
+                  <p>Guitar · 유시현</p>
+                  <p>Bass · 곽은혁</p>
+                  <p>Drums · 최수현</p>
+                </div>
+                <div className="space-y-1">
+                  <p className="font-semibold mb-2">Production</p>
+                  
+                  <p>Recorded by 천우진</p>
+                  <p>Mixed by 천우진</p>
+                  <p>Mastered by 김종민</p>
+                  <p>Artwork filmed by 곽은혁</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* ========== 3PAGE : MUSIC (풀배경) ========== */}
         <section
-          id="music"
+          id="archive"
           className="relative w-full min-h-screen overflow-hidden"
         >
           
@@ -309,7 +421,7 @@ export default function Home() {
           <div className="relative max-w-6xl mx-auto px-6 md:px-10 py-24 flex flex-col justify-center gap-10">
             <div className="bg-white/85 backdrop-blur-sm rounded-3xl shadow-xl p-6 md:p-10 space-y-10">
               <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
-                MUSIC /{" "}
+                ARCHIVE /{" "}
                 <span className="text-slate-500 text-xl md:text-2xl">
                   1st Single
                 </span>
