@@ -143,7 +143,7 @@ export default function Home() {
                 <span className="font-medium"></span> <br className="hidden md:block" /><br className="block md:hidden" />
 
 겨울을 버티고 있는 나에게,<p></p>
-이번 계절이 유독 길게 느껴지는 이들에게 <p></p>
+이번 계절이 유독 길게 느껴지는 이들에게 
 이 노래를 건네고 싶습니다. 
  <p></p> <p></p> 
 늘 그랬듯 겨울은 지나갈 것이기에!
@@ -411,7 +411,63 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ========== 3PAGE : MUSIC (풀배경) ========== */}
+      
+
+        {/* ========== 4PAGE : VISUALIZER (풀배경) ========== */}
+        {/* VISUALIZER – 세로형 썸네일 버전 */}
+<section
+  id="videos"
+  className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center gap-8 py-24"
+>
+ 
+  {/* 콘텐츠 */}
+  <div className="relative max-w-4xl mx-auto px-6 flex flex-col gap-8">
+
+    <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
+      Visualizer / Lyric Video
+    </h3>
+
+    <p className="text-base md:text-lg text-slate-700 max-w-2xl">
+      인스타그램 릴 형식으로 제작된 파아란의 싱글 <br />[우리는 같은 겨울을 지나]의
+      Visualizer &amp; Lyric Video입니다.
+      <br />
+      아래 썸네일을 클릭하면 비디오 링크로 이동합니다.
+    </p>
+
+    {/* 세로형 카드 */}
+    <a
+      href={VISUALIZER_URL}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="relative w-[220px] md:w-[260px] aspect-[9/16] rounded-3xl overflow-hidden shadow-xl border border-slate-200 group mx-auto"
+    >
+      <img
+        src="/insta.jpg"
+        alt="비구름 Visualizer Thumbnail"
+        className="w-full h-full object-cover brightness-90 group-hover:brightness-75 transition"
+      />
+
+      <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 transition" />
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+        <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/70 flex items-center justify-center bg-black/40 group-hover:bg-black/70 transition">
+          <div className="ml-1">
+            <div className="w-0 h-0 border-t-[9px] border-t-transparent border-b-[9px] border-b-transparent border-l-[16px] border-l-white" />
+          </div>
+        </div>
+        <div className="mt-3 text-[10px] md:text-xs tracking-[0.25em] uppercase text-slate-100">
+          Watch Visualizer
+        </div>
+      </div>
+    </a>
+
+    <p className="text-xs md:text-sm text-slate-500 max-w-2xl mx-auto text-center">
+      공식 뮤직비디오 공개 이전, 곡의 분위기와 색감을 표현한 릴 스타일 영상입니다.
+    </p>
+
+  </div>
+</section>
+  {/* ========== 3PAGE : MUSIC (풀배경) ========== */}
         <section
           id="archive"
           className="relative w-full min-h-screen overflow-hidden"
@@ -511,61 +567,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
-        {/* ========== 4PAGE : VISUALIZER (풀배경) ========== */}
-        {/* VISUALIZER – 세로형 썸네일 버전 */}
-<section
-  id="videos"
-  className="relative w-full min-h-screen overflow-hidden flex flex-col justify-center gap-8 py-24"
->
- 
-  {/* 콘텐츠 */}
-  <div className="relative max-w-4xl mx-auto px-6 flex flex-col gap-8">
-
-    <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
-      Visualizer / Lyric Video
-    </h3>
-
-    <p className="text-base md:text-lg text-slate-700 max-w-2xl">
-      인스타그램 릴 형식으로 제작된 파아란의 첫 번째 싱글 [비구름]의
-      Visualizer &amp; Lyric Video
-      <br />
-      아래 썸네일을 클릭하면 인스타그램 릴로 이동합니다.
-    </p>
-
-    {/* 세로형 카드 */}
-    <a
-      href={VISUALIZER_URL}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="relative w-[220px] md:w-[260px] aspect-[9/16] rounded-3xl overflow-hidden shadow-xl border border-slate-200 group mx-auto"
-    >
-      <img
-        src="/insta.jpg"
-        alt="비구름 Visualizer Thumbnail"
-        className="w-full h-full object-cover brightness-90 group-hover:brightness-75 transition"
-      />
-
-      <div className="absolute inset-0 bg-black/25 group-hover:bg-black/40 transition" />
-
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
-        <div className="w-12 h-12 md:w-14 md:h-14 rounded-full border border-white/70 flex items-center justify-center bg-black/40 group-hover:bg-black/70 transition">
-          <div className="ml-1">
-            <div className="w-0 h-0 border-t-[9px] border-t-transparent border-b-[9px] border-b-transparent border-l-[16px] border-l-white" />
-          </div>
-        </div>
-        <div className="mt-3 text-[10px] md:text-xs tracking-[0.25em] uppercase text-slate-100">
-          Watch Visualizer
-        </div>
-      </div>
-    </a>
-
-    <p className="text-xs md:text-sm text-slate-500 max-w-2xl mx-auto text-center">
-      공식 뮤직비디오 공개 이전, 곡의 분위기와 색감을 표현한 릴 스타일 영상입니다.
-    </p>
-
-  </div>
-</section>
 
        {/* ========== 5PAGE : PHOTOS (풀배경) ========== */}
 {/* ========== 5PAGE : PHOTOS (풀배경) ========== */}
