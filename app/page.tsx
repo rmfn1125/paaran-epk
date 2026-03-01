@@ -1,4 +1,4 @@
-const STREAMING_URL =
+const RAINCLOU =
   "https://linksalad.net/Paaran_Raincloud";
 const INSTAGRAM_URL =
   "https://instagram.com/band_paaran";
@@ -6,13 +6,20 @@ const LINKPIE_URL =
   "https://linkpie.com/@band_paaran";
 const VISUALIZER_URL =
   "https://www.instagram.com/reel/DRec4P1ERm9/?igsh=MTM2ZHIwMW9qdzFkbw==";
-const STREAMING_ALL = "https://linksalad.net/Paaran_Raincloud";
-const STREAMING_SPOTIFY =
-  "https://open.spotify.com/album/7lnnDnAWk8HWAuoEt4t4t9";
-const STREAMING_APPLE =
-  "https://music.apple.com/us/album/raincloud-single/1854316419";
-const STREAMING_YT =
-  "https://music.youtube.com/watch?v=a3b5wv2wUa0&list=RDAMVMa3b5wv2wUa0";
+
+  const RAINCLOUD = {
+  ALL: "https://linksalad.net/Paaran_Raincloud",
+  SPOTIFY: "https://open.spotify.com/album/7lnnDnAWk8HWAuoEt4t4t9",
+  APPLE: "https://music.apple.com/us/album/raincloud-single/1854316419",
+  YT: "https://music.youtube.com/watch?v=a3b5wv2wUa0&list=RDAMVMa3b5wv2wUa0",
+};
+
+const PASSING = {
+  ALL: "신곡 linksalad(아직이면 임시 링크)",
+  SPOTIFY: "신곡 스포티파이 링크(없으면 빈칸/임시)",
+  APPLE: "신곡 애플뮤직 링크",
+  YT: "신곡 유튜브뮤직 링크",
+}; 
 
 export default function Home() {
   return (
@@ -135,7 +142,7 @@ export default function Home() {
                   밴드 파아란
                 </p>
                 <p>Rock / Indie · Single</p>
-                <p>우리는 같은 계절을 지나 / Passing Through the winter · 2026.02.28</p>
+                <p>우리는 같은 계절을 지나 / Passing Through the winter · 2026.03.01</p>
               </div>
               {/* 소개 텍스트 */}
               <p className="text-[11px] md:text-sm leading-relaxed text-slate-100 max-w-md tracking-normal">
@@ -157,7 +164,7 @@ export default function Home() {
 
               {/* 버튼 (글래스 스타일) */}
               <a
-                href={STREAMING_URL}
+                href={PASSING.ALL}
                 className="px-6 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-white"
               >
                 LISTEN TO “우리는 같은 계절을 지나”
@@ -338,7 +345,7 @@ export default function Home() {
   </span>
 </h3>
                   <p className="text-xs md:text-sm text-slate-500">
-                    Single · Rock / Indie · 2026.02.28
+                    Single · Rock / Indie · 2026.03.01
                   </p>
                   <p className="text-base md:text-lg leading-relaxed text-slate-800">
                     파아란의 두 번째 싱글 〈우리는 같은 계절을 지나〉는 각자의 자리에서 긴 계절을 지나고 있는 이들에게 건네는 곡입니다.
@@ -360,25 +367,25 @@ export default function Home() {
 
                   <div className="flex flex-wrap gap-3 pt-2 text-xs md:text-sm">
                     <a
-                      href={STREAMING_URL}
+                      href={PASSING.ALL}
                       className="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-sky-600 transition"
                     >
                       All Platforms
                     </a>
                     <a
-                      href={STREAMING_SPOTIFY}
+                      href={PASSING.SPOTIFY}
                       className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
                     >
                       Spotify
                     </a>
                     <a
-                      href={STREAMING_APPLE}
+                      href={PASSING.APPLE}
                       className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
                     >
                       Apple Music
                     </a>
                     <a
-                      href={STREAMING_YT}
+                      href={PASSING.YT}
                       className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
                     >
                       YouTube Music
@@ -519,25 +526,25 @@ export default function Home() {
 
                   <div className="flex flex-wrap gap-3 pt-2 text-xs md:text-sm">
                     <a
-                      href={STREAMING_URL}
+                      href={RAINCLOUD.ALL}
                       className="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-sky-600 transition"
                     >
                       All Platforms
                     </a>
                     <a
-                      href={STREAMING_SPOTIFY}
+                      href={RAINCLOUD.SPOTIFY}
                       className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
                     >
                       Spotify
                     </a>
                     <a
-                      href={STREAMING_APPLE}
+                      href={RAINCLOUD.APPLE}
                       className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
                     >
                       Apple Music
                     </a>
                     <a
-                      href={STREAMING_YT}
+                      href={RAINCLOUD.YT}
                       className="px-4 py-2 rounded-full border border-slate-300 hover:bg-slate-50"
                     >
                       YouTube Music
