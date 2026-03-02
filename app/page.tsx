@@ -5,7 +5,7 @@ const INSTAGRAM_URL =
 const LINKPIE_URL =
   "https://linkpie.com/@band_paaran";
 const VISUALIZER_URL =
-  "https://www.instagram.com/reel/DRec4P1ERm9/?igsh=MTM2ZHIwMW9qdzFkbw==";
+  "https://www.instagram.com/p/DVNzEI6ER02/";
 
   const RAINCLOUD = {
   ALL: "https://linksalad.net/Paaran_Raincloud",
@@ -16,9 +16,9 @@ const VISUALIZER_URL =
 
 const PASSING = {
   ALL: "신곡 linksalad(아직이면 임시 링크)",
-  SPOTIFY: "신곡 스포티파이 링크(없으면 빈칸/임시)",
-  APPLE: "신곡 애플뮤직 링크",
-  YT: "신곡 유튜브뮤직 링크",
+  SPOTIFY: "https://open.spotify.com/album/7jj6wR2IIg0seaj9tfDVIC?si=0_SUzFbBTFuwc5vsJDxVuA",
+  APPLE: "https://music.apple.com/kr/album/passing-through-the-winter-single/1880291384",
+  YT: "https://music.youtube.com/watch?v=Fp_qGpCTT9g&si=z3Y_Tn1gs-7EwgjL",
 }; 
 
 export default function Home() {
@@ -45,7 +45,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://open.spotify.com/album/7lnnDnAWk8HWAuoEt4t4t9"
+          href="https://open.spotify.com/album/7jj6wR2IIg0seaj9tfDVIC?si=Yd-7dKqoRJiIbrYBpGhSog"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -54,7 +54,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://music.apple.com/us/album/raincloud-single/1854316419"
+          href="https://music.apple.com/kr/album/passing-through-the-winter-single/1880291384"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -63,7 +63,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://www.melon.com/album/detail.htm?albumId=12402188&snsGate=Y"
+          href="https://www.melon.com/album/detail.htm?albumId=12886875"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -72,7 +72,7 @@ export default function Home() {
         </a>
 
         <a
-          href="https://genie.co.kr/detail/albumInfo?axnm=86965573"
+          href="https://www.genie.co.kr/detail/albumInfo?axnm=87313695"
           target="_blank"
           rel="noopener noreferrer"
           className="opacity-80 hover:opacity-100 transition"
@@ -110,7 +110,7 @@ export default function Home() {
             <a href="#bio" className="hover:text-white transition">
               BIO
             </a>
-            <a href="#music" className="hover:text-white transition">
+            <a href="#archive" className="hover:text-white transition">
               ARCHIVE
             </a>
             <a href="#photos" className="hover:text-white transition">
@@ -164,7 +164,7 @@ export default function Home() {
 
               {/* 버튼 (글래스 스타일) */}
               <a
-                href={PASSING.ALL}
+                href="https://www.youtube.com/watch?v=h2EcjZPDelc&list=RDh2EcjZPDelc&start_radio=1"
                 className="px-6 py-2 bg-white/20 backdrop-blur-md border border-white/30 rounded-full text-white"
               >
                 LISTEN TO “우리는 같은 계절을 지나”
@@ -370,7 +370,7 @@ export default function Home() {
                       href={PASSING.ALL}
                       className="px-4 py-2 rounded-full bg-blue-600 text-white hover:bg-sky-600 transition"
                     >
-                      All Platforms
+                      YouTube
                     </a>
                     <a
                       href={PASSING.SPOTIFY}
@@ -431,25 +431,25 @@ export default function Home() {
   <div className="relative max-w-4xl mx-auto px-6 flex flex-col gap-8">
 
     <h3 className="text-2xl md:text-3xl font-semibold tracking-tight border-l-4 border-indigo-800 pl-3">
-      Visualizer / Lyric Video
+      Visualizer / Performance Video
     </h3>
 
     <p className="text-base md:text-lg text-slate-700 max-w-2xl">
-      인스타그램 릴 형식으로 제작된 파아란의 싱글 <br />[우리는 같은 겨울을 지나]의
-      Visualizer &amp; Lyric Video입니다.
+      파아란의 싱글 <br />[우리는 같은 겨울을 지나]의
+      Visualizer &amp; Performance video 입니다.
       <br />
-      아래 썸네일을 클릭하면 비디오 링크로 이동합니다.
+      아래 썸네일을 클릭하면 유튜브 링크로 이동합니다.
     </p>
 
     {/* 세로형 카드 */}
     <a
-      href={VISUALIZER_URL}
+      href="https://www.youtube.com/watch?v=h2EcjZPDelc&list=RDh2EcjZPDelc&start_radio=1"
       target="_blank"
       rel="noopener noreferrer"
-      className="relative w-[220px] md:w-[260px] aspect-[9/16] rounded-3xl overflow-hidden shadow-xl border border-slate-200 group mx-auto"
+      className="relative w-[320px] md:w-[600px] aspect-[16/9] rounded-3xl overflow-hidden shadow-xl border border-slate-200 group mx-auto"
     >
       <img
-        src="/insta.jpg"
+        src="/vis1.png"
         alt="비구름 Visualizer Thumbnail"
         className="w-full h-full object-cover brightness-90 group-hover:brightness-75 transition"
       />
@@ -469,7 +469,7 @@ export default function Home() {
     </a>
 
     <p className="text-xs md:text-sm text-slate-500 max-w-2xl mx-auto text-center">
-      공식 뮤직비디오 공개 이전, 곡의 분위기와 색감을 표현한 릴 스타일 영상입니다.
+     
     </p>
 
   </div>
