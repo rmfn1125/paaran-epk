@@ -29,7 +29,7 @@ const RELEASES = [
     youtube:
       "https://music.youtube.com/watch?v=Fp_qGpCTT9g&si=z3Y_Tn1gs-7EwgjL",
     description:
-      "파아란의 두 번째 싱글 〈우리는 같은 계절을 지나〉는 유난히 길게 느껴지는 계절을 지나고 있는 이들에게 건네는 곡입니다. 저마다의 방식으로 겨울을 통과하는 시간, 그리고 결국 지나갈 계절을 믿는 마음을 담았습니다.",
+      "파아란의 두 번째 싱글 〈우리는 같은 계절을 지나〉는 각자의 자리에서 긴 계절을 지나고 있는 이들에게 건네는 곡입니다. 유난히 길게 느껴지는 시간 속에서, 결국 우리는 각자의 방식으로 이 시간을 건너고 있다 이야기하고자 했습니다. 이 곡이 지금 겨울을 버티고 있는 분들께 작은 공감으로 닿기를 바랍니다.",
     quote: [
       "겨울을 버티고 있는 나에게,",
       "이번 계절이 유독 길게 느껴지는 이들에게",
@@ -48,7 +48,7 @@ const RELEASES = [
     youtube:
       "https://music.youtube.com/watch?v=a3b5wv2wUa0&list=RDAMVMa3b5wv2wUa0",
     description:
-      "첫 번째 싱글 〈비구름〉은 말하지 못한 마음을 빗소리에 비유해 풀어낸 곡입니다. 전하지 못한 감정을 조용한 고백과 기다림의 시간으로 옮기며, 비가 머물던 자리처럼 쉽게 가시지 않는 여운을 담아냅니다.",
+      "밴드 파아란의 첫 번째 싱글 [비구름]은 말하지 못한 마음을 빗소리에 비유해 표현한 곡으로, 전하지 못한 감정을 잊힌 단어들로 전하는 조용한 고백과 기다림의 시간을 담았습니다. 비가 그친 뒤에도 비가 머물던 자리처럼 계속되는 마음의 여운을 그려봅니다.",
     quote: ["언제부턴가", "나는", "하염없이", "비가 오기만 기다립니다."],
   },
 ] as const;
@@ -83,7 +83,7 @@ function SectionHeading({ title }: { title: string }) {
     <div className="mb-8 md:mb-10">
       <div className="flex items-center gap-3 md:gap-4">
         <span className="text-[18px] leading-none text-[var(--strong)] md:text-[22px]">
-          ✦
+          🌊
         </span>
         <h2 className="text-[28px] font-bold leading-[1.15] tracking-[-0.03em] text-[var(--text)] md:text-[32px]">
           {title}
@@ -266,7 +266,7 @@ function NotionEPKSection() {
             <div className="mt-1 h-auto min-h-[72px] w-1 bg-[var(--strong)]" />
             <div className="space-y-1.5">
               <p className="text-[15px] leading-[1.75] text-[var(--text)]">
-                파아란은 보컬 겸 기타 <strong>천우진</strong>, 기타 <strong>유시현</strong>, 베이스 <strong>곽은혁</strong>으로 구성된 대한민국의 3인조 밴드입니다. 모던 록을 기반으로 다양한 장르와 사운드를 탐색하며, 곡마다 선명한 정서와 결을 만들어 갑니다.
+                파아란은 보컬 겸 기타 <strong>천우진</strong>, 기타 <strong>유시현</strong>, 베이스 <strong>곽은혁</strong>으로 구성된 대한민국의 3인조 밴드이며, “끊임없이 밀려드는 파도, 끝없이 펼쳐진 하늘, 그것이 무엇이든 우리의 노래가 모두의 기억 속에 파아란 색으로 남길 바란다”라는 뜻을 담고 있습니다. 
               </p>
               <p className="text-[15px] leading-[1.75] text-[var(--muted)]">
                 The name Paaran holds the wish that our songs remain as a vivid blue memory — like waves, sky, and everything expansive that lingers long after the sound fades.
@@ -369,18 +369,16 @@ function NotionEPKSection() {
 
           <div className="grid grid-cols-1 gap-10 md:grid-cols-[1.1fr_0.9fr] md:items-start">
             <div>
-              <a
-                href={LINKS.visualizer}
-                target="_blank"
-                rel="noreferrer"
-                className="block"
-              >
-                <img
-                  src="/vis1.png"
-                  alt="Visualizer thumbnail"
-                  className="aspect-[16/9] w-full object-cover"
-                />
-              </a>
+              <div className="aspect-[16/9] w-full overflow-hidden bg-black">
+  <iframe
+    className="h-full w-full"
+    src="https://www.youtube.com/embed/h2EcjZPDelc"
+    title="Paaran Visualizer"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    referrerPolicy="strict-origin-when-cross-origin"
+    allowFullScreen
+  />
+</div>
             </div>
 
             <div className="space-y-4">
@@ -485,7 +483,7 @@ function NotionEPKSection() {
               E.O.D
             </h3>
             <p className="mt-4 max-w-[72ch] text-[15px] leading-[1.8] text-[var(--text)]">
-              끊임없이 밀려드는 파도와 끝없이 펼쳐진 하늘처럼, 파아란의 음악이 누군가의 기억 속에 오래 남는 색이 되기를 바랍니다. We hope our music stays with listeners as a quiet but lasting scene.
+              끊임없이 밀려드는 파도와 끝없이 펼쳐진 하늘처럼, 파아란의 음악이 누군가를 위로할 수 있게 되기를 바랍니다. We hope Paaran’s music can become a source of comfort for someone, like endlessly rolling waves and an ever-expanding sky.
             </p>
             <p className="mt-10 text-[13px] text-[var(--muted)]">
               © {new Date().getFullYear()} Paaran. All rights reserved.
