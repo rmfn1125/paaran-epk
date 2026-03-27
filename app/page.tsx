@@ -19,6 +19,26 @@ const LINKS = {
 
 const RELEASES = [
   {
+    title: "푸른 달",
+    subtitle: "Blue moon",
+    meta: "Single · Rock / Indie · 2026.03.16",
+    image: "/blue-moon-cover.jpg",
+    all: LINKS.linkpie,
+    spotify: "https://open.spotify.com/track/5t6dt5rXgkm3HnA60KOIez?si=c3c4b959c73c4cc2",
+    apple:
+      "https://music.apple.com/kr/album/%ED%91%B8%EB%A5%B8-%EB%8B%AC/1884021847?i=1884021852",
+    youtube:
+      "https://music.youtube.com/watch?v=-tK2Y8u5wWc&si=cBgbyWCQSXTGlC1y",
+    description:
+      "언젠가 꿈에서 보았던 파랗고 큰 달에 관한 이야기입니다.\n〈푸른 달〉은 희망을 노래하지 않지만, 멈춰 있기를 바라지도 않습니다.\n바라보는 무언가가 분명하지 않더라도 끝없이 정적인 세계에서 어딘가로 움직이려 했던 흔적을 남기고자 했습니다.",
+    quote: [
+      "언젠가 꿈에서 보았던",
+      "파랗고 큰 달에 관한 이야기입니다.",
+      "멈춰 있기를 바라지도 않습니다.",
+      "어딘가로 움직이려 했던 흔적을 남기고자 했습니다.",
+    ],
+  },
+  {
     title: "우리는 같은 계절을 지나",
     subtitle: "Passing Through the Winter",
     meta: "Single · Rock / Indie · 2026.03.01",
@@ -26,10 +46,9 @@ const RELEASES = [
     all: LINKS.linkpie,
     spotify: LINKS.spotify,
     apple: LINKS.apple,
-    youtube:
-      "https://music.youtube.com/watch?v=Fp_qGpCTT9g&si=z3Y_Tn1gs-7EwgjL",
+    youtube: "https://music.youtube.com/watch?v=Fp_qGpCTT9g&si=z3Y_Tn1gs-7EwgjL",
     description:
-      "파아란의 두 번째 싱글 〈우리는 같은 계절을 지나〉는 각자의 자리에서 긴 계절을 지나고 있는 이들에게 건네는 곡입니다. 유난히 길게 느껴지는 시간 속에서, 결국 우리는 각자의 방식으로 이 시간을 건너고 있다 이야기하고자 했습니다. 이 곡이 지금 겨울을 버티고 있는 분들께 작은 공감으로 닿기를 바랍니다.",
+      "파아란의 두 번째 싱글 〈우리는 같은 계절을 지나〉는 각자의 자리에서 긴 계절을 지나고 있는 이들에게 건네는 곡입니다.\n유난히 길게 느껴지는 시간 속에서, 결국 우리는 각자의 방식으로 이 시간을 건너고 있다 이야기하고자 했습니다.\n이 곡이 지금 겨울을 버티고 있는 분들께 작은 공감으로 닿기를 바랍니다.",
     quote: [
       "겨울을 버티고 있는 나에게,",
       "이번 계절이 유독 길게 느껴지는 이들에게",
@@ -45,14 +64,12 @@ const RELEASES = [
     all: "https://linksalad.net/Paaran_Raincloud",
     spotify: "https://open.spotify.com/album/7lnnDnAWk8HWAuoEt4t4t9",
     apple: "https://music.apple.com/us/album/raincloud-single/1854316419",
-    youtube:
-      "https://music.youtube.com/watch?v=a3b5wv2wUa0&list=RDAMVMa3b5wv2wUa0",
+    youtube: "https://music.youtube.com/watch?v=a3b5wv2wUa0&list=RDAMVMa3b5wv2wUa0",
     description:
-      "밴드 파아란의 첫 번째 싱글 [비구름]은 말하지 못한 마음을 빗소리에 비유해 표현한 곡으로, 전하지 못한 감정을 잊힌 단어들로 전하는 조용한 고백과 기다림의 시간을 담았습니다. 비가 그친 뒤에도 비가 머물던 자리처럼 계속되는 마음의 여운을 그려봅니다.",
+      "밴드 파아란의 첫 번째 싱글 [비구름]은 말하지 못한 마음을 빗소리에 비유해 표현한 곡으로, 전하지 못한 감정을 잊힌 단어들로 전하는 조용한 고백과 기다림의 시간을 담았습니다.\n비가 그친 뒤에도 비가 머물던 자리처럼 계속되는 마음의 여운을 그려봅니다.",
     quote: ["언제부턴가", "나는", "하염없이", "비가 오기만 기다립니다."],
   },
 ] as const;
-
 const MEMBERS = [
   {
     name: "천우진",
@@ -413,18 +430,20 @@ function NotionEPKSection() {
           </div>
 
           <div className="mt-12 grid grid-cols-2 gap-6 md:mt-14 md:grid-cols-4 md:gap-8">
-            {LOGOS.map((logo) => (
-              <div
-                key={logo.src}
-                className="flex items-center justify-center border border-[var(--line)] bg-white p-5"
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="max-h-16 w-full object-contain"
-                />
-              </div>
-            ))}
+            {LOGOS.map((logo, index) => (
+  <div
+    key={logo.src}
+    className={`flex items-center justify-center border border-neutral-200 px-8 py-10 ${
+      index < 2 ? "bg-black" : "bg-white"
+    }`}
+  >
+    <img
+      src={logo.src}
+      alt={logo.alt}
+      className="max-h-16 w-auto object-contain"
+    />
+  </div>
+))}
           </div>
         </section>
 
